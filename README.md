@@ -8,6 +8,20 @@ Tiny C program to validation Parentheses `()` `[]` `{}` and symbols.
 bool validSyntax(char* input);
 ```
 
+## Compile
+
+```
+$ gcc validp.c -o validp
+```
+
+## Using
+
+```
+$ ./validp
+$ ./validp '(MaxBase)'
+$ ./validp '(BadTest(((('
+```
+
 ## Examples
 
 ### True test
