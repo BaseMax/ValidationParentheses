@@ -8,6 +8,32 @@ Tiny C program to validation Parentheses `()` `[]` `{}` and symbols.
 bool validSyntax(char* input);
 ```
 
+## Examples
+
+### True test
+
+```c
+TEST("(){[]}")
+TEST("{()[]}")
+TEST("[[]]({})")
+TEST("a(dfgdfgdfgdfg)")
+TEST("a(dfgdfgd{dfdfgdfg}fgdfg)")
+TEST("((()))")
+TEST("{{{}}}")
+TEST("{{{\n}}}")
+```
+
+### False test
+
+```c
+TEST("{(}")
+TEST("())")
+TEST("({[])}")
+TEST("a(dfgdfgdfgdfg")
+TEST("a(dfgdfgd{dfdfgdfgfgdfg)")
+TEST("a(dfgdfgd{dfdfgdfgfgdfg")
+```
+
 ---------
 
 # Max Base
